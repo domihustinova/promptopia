@@ -48,7 +48,7 @@ const Nav = () => {
                 width={37}
                 height={37}
                 className="rounded-full"
-                alt="profile"
+                alt="Profile image"
               />
             </Link>
           </div>
@@ -78,11 +78,12 @@ const Nav = () => {
               width={37}
               height={37}
               className="rounded-full"
-              alt="profile"
+              alt="Profile image"
+              aria-label="Profile image"
               onClick={() => setToggleDropdown((prev) => !prev)}
             />
             {toggleDropdown && (
-              <div className="dropdown">
+              <div className="dropdown" data-test="dropdown">
                 <Link
                   href="/profile"
                   className="dropdown_link"
